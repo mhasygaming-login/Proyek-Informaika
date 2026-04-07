@@ -5,9 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Angkatan 11 | Elite Performance Division</title>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+
     <style>
         :root {
             --pro-black: #030303;
@@ -128,8 +130,17 @@
         }
 
         @keyframes pulse {
-            0%, 100% { opacity: 1; transform: scale(1); }
-            50% { opacity: 0.6; transform: scale(1.2); }
+
+            0%,
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+
+            50% {
+                opacity: 0.6;
+                transform: scale(1.2);
+            }
         }
 
         .nav-links {
@@ -188,7 +199,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-image: 
+            background-image:
                 linear-gradient(rgba(0, 102, 255, 0.03) 1px, transparent 1px),
                 linear-gradient(90deg, rgba(0, 102, 255, 0.03) 1px, transparent 1px);
             background-size: 50px 50px;
@@ -197,8 +208,13 @@
         }
 
         @keyframes gridMove {
-            0% { transform: translate(0, 0); }
-            100% { transform: translate(50px, 50px); }
+            0% {
+                transform: translate(0, 0);
+            }
+
+            100% {
+                transform: translate(50px, 50px);
+            }
         }
 
         /* Floating Orbs */
@@ -229,9 +245,19 @@
         }
 
         @keyframes floatOrb {
-            0%, 100% { transform: translate(0, 0) scale(1); }
-            33% { transform: translate(30px, -30px) scale(1.1); }
-            66% { transform: translate(-20px, 20px) scale(0.9); }
+
+            0%,
+            100% {
+                transform: translate(0, 0) scale(1);
+            }
+
+            33% {
+                transform: translate(30px, -30px) scale(1.1);
+            }
+
+            66% {
+                transform: translate(-20px, 20px) scale(0.9);
+            }
         }
 
         /* Search Container */
@@ -283,8 +309,8 @@
             pointer-events: none;
         }
 
-        .search-input:focus ~ .search-icon,
-        .search-input.has-content ~ .search-icon {
+        .search-input:focus~.search-icon,
+        .search-input.has-content~.search-icon {
             color: var(--electric-blue);
         }
 
@@ -299,8 +325,8 @@
             transition: all 0.4s;
         }
 
-        .search-input:focus ~ .search-tags,
-        .search-input.has-content ~ .search-tags {
+        .search-input:focus~.search-tags,
+        .search-input.has-content~.search-tags {
             opacity: 1;
             transform: translateY(0);
         }
@@ -347,8 +373,15 @@
         }
 
         @keyframes badgePulse {
-            0%, 100% { box-shadow: 0 0 0 0 rgba(0, 102, 255, 0.4); }
-            50% { box-shadow: 0 0 0 10px rgba(0, 102, 255, 0); }
+
+            0%,
+            100% {
+                box-shadow: 0 0 0 0 rgba(0, 102, 255, 0.4);
+            }
+
+            50% {
+                box-shadow: 0 0 0 10px rgba(0, 102, 255, 0);
+            }
         }
 
         .hero h1 {
@@ -369,7 +402,7 @@
             top: 0;
             width: 100%;
             height: 100%;
-            background: linear-gradient(135deg, transparent 0%, rgba(255,255,255,0.8) 50%, transparent 100%);
+            background: linear-gradient(135deg, transparent 0%, rgba(255, 255, 255, 0.8) 50%, transparent 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             animation: shimmer 3s infinite;
@@ -377,8 +410,13 @@
         }
 
         @keyframes shimmer {
-            0% { background-position: -200% center; }
-            100% { background-position: 200% center; }
+            0% {
+                background-position: -200% center;
+            }
+
+            100% {
+                background-position: 200% center;
+            }
         }
 
         .hero-subtitle {
@@ -444,8 +482,15 @@
         }
 
         @keyframes floatHero {
-            0%, 100% { transform: translateY(0) rotateX(0deg); }
-            50% { transform: translateY(-20px) rotateX(5deg); }
+
+            0%,
+            100% {
+                transform: translateY(0) rotateX(0deg);
+            }
+
+            50% {
+                transform: translateY(-20px) rotateX(5deg);
+            }
         }
 
         .hero-img {
@@ -468,8 +513,13 @@
         }
 
         @keyframes rotateRing {
-            0% { transform: translate(-50%, -50%) rotate(0deg); }
-            100% { transform: translate(-50%, -50%) rotate(360deg); }
+            0% {
+                transform: translate(-50%, -50%) rotate(0deg);
+            }
+
+            100% {
+                transform: translate(-50%, -50%) rotate(360deg);
+            }
         }
 
         /* Performance Chart Section */
@@ -680,7 +730,7 @@
             left: -100%;
             width: 100%;
             height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
             transition: 0.5s;
         }
 
@@ -690,7 +740,7 @@
 
         .card:hover {
             border-color: var(--electric-blue);
-            box-shadow: 
+            box-shadow:
                 0 20px 40px rgba(0, 0, 0, 0.4),
                 0 0 0 1px rgba(0, 102, 255, 0.3),
                 0 0 30px rgba(0, 102, 255, 0.1);
@@ -729,7 +779,7 @@
             height: 90%;
             object-fit: contain;
             transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
-            filter: drop-shadow(0 15px 30px rgba(0,0,0,0.5));
+            filter: drop-shadow(0 15px 30px rgba(0, 0, 0, 0.5));
         }
 
         .card:hover img {
@@ -881,7 +931,7 @@
             border-radius: 30px;
             padding: 0;
             position: relative;
-            box-shadow: 
+            box-shadow:
                 0 0 0 1px rgba(0, 102, 255, 0.1),
                 0 50px 100px rgba(0, 0, 0, 0.5);
             transform: scale(0.9) translateY(20px);
@@ -1109,7 +1159,9 @@
         }
 
         @keyframes spin {
-            to { transform: rotate(360deg); }
+            to {
+                transform: rotate(360deg);
+            }
         }
 
         .loader-text {
@@ -1209,18 +1261,53 @@
 
         /* Responsive */
         @media (max-width: 768px) {
-            .cursor-dot, .cursor-outline { display: none; }
-            body { cursor: auto; }
-            
-            .hero h1 { font-size: 2.5rem; }
-            .stats-row { gap: 20px; }
-            .stat-item { min-width: 100px; padding: 15px; }
-            .stat-number { font-size: 2rem; }
-            .grid-container { grid-template-columns: 1fr; padding: 30px 5%; }
-            .filter-section { top: 70px; }
-            .modal-content { width: 95%; }
-            .charts-grid { grid-template-columns: 1fr; }
-            .advanced-filters { margin: 20px 5%; }
+
+            .cursor-dot,
+            .cursor-outline {
+                display: none;
+            }
+
+            body {
+                cursor: auto;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .stats-row {
+                gap: 20px;
+            }
+
+            .stat-item {
+                min-width: 100px;
+                padding: 15px;
+            }
+
+            .stat-number {
+                font-size: 2rem;
+            }
+
+            .grid-container {
+                grid-template-columns: 1fr;
+                padding: 30px 5%;
+            }
+
+            .filter-section {
+                top: 70px;
+            }
+
+            .modal-content {
+                width: 95%;
+            }
+
+            .charts-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .advanced-filters {
+                margin: 20px 5%;
+            }
         }
 
         /* Scroll Animations */
@@ -1273,7 +1360,8 @@
         <div class="search-container fade-up">
             <div class="search-wrapper">
                 <i class="fas fa-search search-icon"></i>
-                <input type="text" class="search-input" id="searchInput" placeholder="Cari laptop, pemilik, atau spesifikasi...">
+                <input type="text" class="search-input" id="searchInput"
+                    placeholder="Cari laptop, pemilik, atau spesifikasi...">
             </div>
             <div class="search-tags">
                 <span class="tag" onclick="quickSearch('ASUS')">ASUS</span>
@@ -1290,10 +1378,10 @@
             </div>
             <h1 data-text="THE PRO GENERATION">THE PRO GENERATION</h1>
             <p class="hero-subtitle">
-                Database eksklusif untuk Angkatan 11. Menampilkan workstation kelas atas, 
+                Database eksklusif untuk Angkatan 11. Menampilkan workstation kelas atas,
                 laptop gaming premium, dan perangkat kreatif profesional.
             </p>
-            
+
             <div class="stats-row">
                 <div class="stat-item">
                     <span class="stat-number" id="totalLaptops">0</span>
@@ -1317,7 +1405,8 @@
         <div class="hero-visual fade-up">
             <div class="hero-img-container">
                 <div class="glow-ring"></div>
-                <img src="https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?w=800&auto=format&fit=crop" alt="Elite Laptop" class="hero-img">
+                <img src="https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?w=800&auto=format&fit=crop"
+                    alt="Elite Laptop" class="hero-img">
             </div>
         </div>
     </section>
@@ -1422,7 +1511,7 @@
                 <h2 class="modal-title" id="m-title">Laptop Name</h2>
                 <div class="modal-subtitle" id="m-brand">Brand</div>
             </div>
-            
+
             <div class="modal-body">
                 <div class="specs-grid">
                     <div class="spec-item">
@@ -1486,7 +1575,8 @@
                         </div>
                     </div>
 
-                    <div class="spec-item" style="background: rgba(0, 255, 136, 0.05); border-color: rgba(0, 255, 136, 0.2);">
+                    <div class="spec-item"
+                        style="background: rgba(0, 255, 136, 0.05); border-color: rgba(0, 255, 136, 0.2);">
                         <div class="spec-info">
                             <div class="spec-icon" style="background: rgba(0, 255, 136, 0.1); color: #00ff88;">
                                 <i class="fas fa-tag"></i>
@@ -1517,7 +1607,7 @@
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
-    
+
     <script>
         // Database Angkatan 11 dengan spesifikasi yang diminta
         const globalLaptops = [
@@ -1528,7 +1618,7 @@
                 nama: "VivoBook Pro 15",
                 pemilik: "Ahmad Rizky",
                 type: "Content Creator",
-                img: "https://dlcdnwebimgs.asus.com/gain/5E8D6D4B-8C3A-4E5B-9B1E-8F7D6C5B4A32/w400",
+                img: "https://i.pinimg.com/736x/bc/17/ee/bc17ee981e922eaa87907beb079e8bd0.jpg",
                 cpu: "Intel Core i7-11370H",
                 core: "4 CORES | 8 THREADS",
                 ram: "16GB DDR4-3200",
@@ -1545,7 +1635,7 @@
                 nama: "TUF Gaming F15",
                 pemilik: "Budi Santoso",
                 type: "Gaming Entry",
-                img: "https://dlcdnwebimgs.asus.com/gain/1A2B3C4D-5E6F-7G8H-9I0J-1K2L3M4N5O6P/w400",
+                img: "https://i.pinimg.com/1200x/09/21/36/0921367dc37807ce98ad0cbc4ff37cd6.jpg",
                 cpu: "Intel Core i5-11400H",
                 core: "6 CORES | 12 THREADS",
                 ram: "8GB DDR4-3200",
@@ -1564,7 +1654,7 @@
                 nama: "IdeaPad Gaming 3",
                 pemilik: "Citra Dewi",
                 type: "Budget Gaming",
-                img: "https://p1-ofp.static.pub/medias/lenovo-ideapad-gaming-3-15-intel.png",
+                img: "https://i.pinimg.com/736x/ec/47/b0/ec47b047d1b42cb98c068bc37e375f0f.jpg",
                 cpu: "Intel Core i5-11320H",
                 core: "4 CORES | 8 THREADS",
                 ram: "8GB DDR4-3200",
@@ -1581,7 +1671,7 @@
                 nama: "Legion 5",
                 pemilik: "Dedi Kurniawan",
                 type: "Gaming Performance",
-                img: "https://p1-ofp.static.pub/medias/lenovo-legion-5.png",
+                img: "https://i.pinimg.com/1200x/29/31/33/2931336a9da8637c56360111159dd495.jpg",
                 cpu: "AMD Ryzen 5 5600H",
                 core: "6 CORES | 12 THREADS",
                 ram: "16GB DDR4-3200",
@@ -1598,7 +1688,7 @@
                 nama: "ThinkPad E14",
                 pemilik: "Eka Putri",
                 type: "Business Productivity",
-                img: "https://p1-ofp.static.pub/medias/lenovo-thinkpad-e14.png",
+                img: "https://i.pinimg.com/1200x/3d/b8/40/3db840d143379a8fed28a9f8c9f00b68.jpg",
                 cpu: "Intel Core i3-1115G4",
                 core: "2 CORES | 4 THREADS",
                 ram: "8GB DDR4-3200",
@@ -1617,7 +1707,7 @@
                 nama: "Victus 15",
                 pemilik: "Muhamad hilmi mustofa assiba'i",
                 type: "Daily Productivity",
-                img: "https://ssl-product-images.www8-hp.com/digmedialib/prodimg/lowres/c08350591.png",
+                img: "https://i.pinimg.com/736x/2b/cc/2f/2bcc2f7864c0c9a3b93c8f70cfb3e68e.jpg",
                 cpu: "Intel Core i5-12500H",
                 core: "12 CORES | 16 THREADS",
                 ram: "8GB DDR4-2400",
@@ -1634,7 +1724,7 @@
                 nama: "Victus 16",
                 pemilik: "Gita Sari",
                 type: "Gaming Entry",
-                img: "https://ssl-product-images.www8-hp.com/digmedialib/prodimg/lowres/c08350591.png",
+                img: "https://i.pinimg.com/1200x/02/16/2b/02162b0e68ac4531ad3fc3fe819bc956.jpg",
                 cpu: "Intel Core i7-12700H",
                 core: "14 CORES | 20 THREADS",
                 ram: "16GB DDR4-3200",
@@ -1645,7 +1735,7 @@
                 price: "Rp 15.999.000",
                 performance: { cpu: 80, ram: 60, gpu: 75 }
             },
-            
+
             // Acer (2 Laptops)
             {
                 id: 9,
@@ -1664,7 +1754,7 @@
                 price: "Rp 7.499.000",
                 performance: { cpu: 65, ram: 40, gpu: 45 }
             },
-            
+
             // Dell (1 Laptop)
             {
                 id: 11,
@@ -1767,10 +1857,10 @@
         // Advanced Filters Initialization
         function initAdvancedFilters() {
             document.querySelectorAll('.filter-chip').forEach(chip => {
-                chip.addEventListener('click', function() {
+                chip.addEventListener('click', function () {
                     const filterType = this.dataset.filter;
                     const filterValue = this.dataset.value;
-                    
+
                     if (this.classList.contains('active')) {
                         this.classList.remove('active');
                         activeFilters[filterType] = activeFilters[filterType].filter(v => v !== filterValue);
@@ -1778,7 +1868,7 @@
                         this.classList.add('active');
                         activeFilters[filterType].push(filterValue);
                     }
-                    
+
                     render();
                 });
             });
@@ -1788,7 +1878,7 @@
         function updateStats() {
             const total = globalLaptops.length;
             const brands = [...new Set(globalLaptops.map(l => l.brand))].length;
-            
+
             // Calculate average price
             const prices = globalLaptops.map(l => {
                 const num = parseInt(l.price.replace(/[^0-9]/g, ''));
@@ -1799,7 +1889,7 @@
 
             animateValue('totalLaptops', 0, total, 1500);
             animateValue('totalBrands', 0, brands, 1500);
-            
+
             setTimeout(() => {
                 document.getElementById('avgPrice').textContent = avgFormatted;
             }, 1500);
@@ -1811,7 +1901,7 @@
             const increment = end > start ? 1 : -1;
             const stepTime = Math.abs(Math.floor(duration / range));
             let current = start;
-            
+
             const timer = setInterval(() => {
                 current += increment;
                 obj.innerHTML = current;
@@ -1854,7 +1944,7 @@
             const container = document.getElementById(containerId);
             container.innerHTML = '';
             const max = Math.max(...Object.values(data));
-            
+
             Object.entries(data).forEach(([key, value]) => {
                 if (value > 0) {
                     const percentage = (value / globalLaptops.length) * 100;
@@ -1921,7 +2011,7 @@
             // Apply search
             if (searchQuery) {
                 const q = searchQuery.toLowerCase();
-                filtered = filtered.filter(l => 
+                filtered = filtered.filter(l =>
                     l.nama.toLowerCase().includes(q) ||
                     l.pemilik.toLowerCase().includes(q) ||
                     l.brand.toLowerCase().includes(q) ||
@@ -1936,7 +2026,7 @@
                 notFound.style.display = 'block';
             } else {
                 notFound.style.display = 'none';
-                
+
                 filtered.forEach((laptop, index) => {
                     const card = createCard(laptop, index);
                     grid.appendChild(card);
@@ -1992,12 +2082,12 @@
         // Filter Functions
         function filterBrand(brand) {
             currentFilter = brand;
-            
+
             // Update active button
             document.querySelectorAll('.filter-btn').forEach(btn => {
                 btn.classList.remove('active');
                 const btnText = btn.textContent.trim();
-                if ((brand === 'all' && btnText.includes('Semua')) || 
+                if ((brand === 'all' && btnText.includes('Semua')) ||
                     btnText.includes(brand)) {
                     btn.classList.add('active');
                 }

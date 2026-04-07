@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Angkatan School | The Future Portal</title>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <style>
@@ -79,13 +81,11 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: linear-gradient(
-                to bottom,
-                rgba(255,255,255,0),
-                rgba(255,255,255,0) 50%,
-                rgba(0,0,0,0.1) 50%,
-                rgba(0,0,0,0.1)
-            );
+            background: linear-gradient(to bottom,
+                    rgba(255, 255, 255, 0),
+                    rgba(255, 255, 255, 0) 50%,
+                    rgba(0, 0, 0, 0.1) 50%,
+                    rgba(0, 0, 0, 0.1));
             background-size: 100% 4px;
             pointer-events: none;
             z-index: 9997;
@@ -169,7 +169,7 @@
         .loader-bar {
             width: 200px;
             height: 2px;
-            background: rgba(255,255,255,0.1);
+            background: rgba(255, 255, 255, 0.1);
             border-radius: 2px;
             overflow: hidden;
             position: relative;
@@ -195,8 +195,15 @@
         }
 
         @keyframes pulse {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.5; }
+
+            0%,
+            100% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0.5;
+            }
         }
 
         /* Navigation */
@@ -304,8 +311,15 @@
         }
 
         @keyframes blink {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.3; }
+
+            0%,
+            100% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0.3;
+            }
         }
 
         /* Gradient Blobs */
@@ -338,8 +352,13 @@
         }
 
         @keyframes moveBlob {
-            from { transform: translate(-5%, -5%) scale(1); }
-            to { transform: translate(5%, 5%) scale(1.1); }
+            from {
+                transform: translate(-5%, -5%) scale(1);
+            }
+
+            to {
+                transform: translate(5%, 5%) scale(1.1);
+            }
         }
 
         /* Progress Bar */
@@ -457,8 +476,15 @@
         }
 
         @keyframes bounce {
-            0%, 100% { transform: translateX(-50%) translateY(0); }
-            50% { transform: translateX(-50%) translateY(10px); }
+
+            0%,
+            100% {
+                transform: translateX(-50%) translateY(0);
+            }
+
+            50% {
+                transform: translateX(-50%) translateY(10px);
+            }
         }
 
         /* Champion Grid */
@@ -490,7 +516,7 @@
             left: -100%;
             width: 100%;
             height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
             transition: 0.5s;
         }
 
@@ -502,7 +528,7 @@
             transform: translateY(-20px) scale(1.02);
             border-color: var(--border-glass-hover);
             background: var(--card-glass-hover);
-            box-shadow: 0 30px 60px rgba(0,0,0,0.4);
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
         }
 
         .rank-1 {
@@ -523,7 +549,7 @@
             left: -50%;
             width: 200%;
             height: 200%;
-            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
             opacity: 0;
             transition: 0.5s;
             pointer-events: none;
@@ -567,7 +593,7 @@
             text-transform: uppercase;
             letter-spacing: 1.5px;
             border: 1px solid rgba(255, 255, 255, 0.15);
-            background: rgba(0,0,0,0.3);
+            background: rgba(0, 0, 0, 0.3);
             backdrop-filter: blur(10px);
             z-index: 3;
         }
@@ -581,8 +607,13 @@
         }
 
         @keyframes glow {
-            from { box-shadow: 0 0 20px rgba(255, 183, 3, 0.3); }
-            to { box-shadow: 0 0 40px rgba(255, 183, 3, 0.6); }
+            from {
+                box-shadow: 0 0 20px rgba(255, 183, 3, 0.3);
+            }
+
+            to {
+                box-shadow: 0 0 40px rgba(255, 183, 3, 0.6);
+            }
         }
 
         .card-info h3 {
@@ -627,13 +658,13 @@
             color: #aaa;
             text-transform: uppercase;
             letter-spacing: 0.5px;
-            border: 1px solid rgba(255,255,255,0.05);
+            border: 1px solid rgba(255, 255, 255, 0.05);
             transition: 0.3s;
         }
 
         .tag:hover {
-            background: rgba(255,255,255,0.1);
-            border-color: rgba(255,255,255,0.2);
+            background: rgba(255, 255, 255, 0.1);
+            border-color: rgba(255, 255, 255, 0.2);
             transform: translateY(-2px);
         }
 
@@ -761,7 +792,7 @@
             align-items: center;
             gap: 15px;
             font-size: 0.95rem;
-            color: rgba(255,255,255,0.8);
+            color: rgba(255, 255, 255, 0.8);
         }
 
         .feature-icon {
@@ -792,7 +823,7 @@
             letter-spacing: 2px;
             font-size: 0.85rem;
             backdrop-filter: blur(10px);
-            background: rgba(255,255,255,0.02);
+            background: rgba(255, 255, 255, 0.02);
             position: relative;
             overflow: hidden;
         }
@@ -804,7 +835,7 @@
             left: -100%;
             width: 100%;
             height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
             transition: 0.5s;
         }
 
@@ -817,7 +848,7 @@
             color: black;
             transform: scale(1.05);
             border-color: white;
-            box-shadow: 0 20px 40px rgba(255,255,255,0.2);
+            box-shadow: 0 20px 40px rgba(255, 255, 255, 0.2);
         }
 
         .explore-btn i {
@@ -837,7 +868,7 @@
             margin-left: 60px;
             z-index: 2;
             box-shadow: 0 50px 100px -20px rgba(0, 0, 0, 0.5);
-            border: 1px solid rgba(255,255,255,0.1);
+            border: 1px solid rgba(255, 255, 255, 0.1);
         }
 
         .section-reverse .image-wrapper {
@@ -849,7 +880,7 @@
             content: '';
             position: absolute;
             inset: 0;
-            background: linear-gradient(135deg, rgba(45,90,245,0.1), transparent);
+            background: linear-gradient(135deg, rgba(45, 90, 245, 0.1), transparent);
             pointer-events: none;
         }
 
@@ -864,11 +895,11 @@
             position: absolute;
             bottom: 30px;
             left: 30px;
-            background: rgba(0,0,0,0.8);
+            background: rgba(0, 0, 0, 0.8);
             backdrop-filter: blur(20px);
             padding: 15px 25px;
             border-radius: 15px;
-            border: 1px solid rgba(255,255,255,0.1);
+            border: 1px solid rgba(255, 255, 255, 0.1);
             z-index: 3;
         }
 
@@ -940,8 +971,13 @@
         }
 
         @keyframes scrollMarquee {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(-50%); }
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
         }
 
         .brand-btn {
@@ -1047,7 +1083,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: radial-gradient(circle at top right, rgba(45,90,245,0.1), transparent 70%);
+            background: radial-gradient(circle at top right, rgba(45, 90, 245, 0.1), transparent 70%);
             opacity: 0;
             transition: 0.5s;
         }
@@ -1060,7 +1096,7 @@
             transform: translateY(-15px) scale(1.02);
             border-color: rgba(255, 255, 255, 0.2);
             background: var(--card-glass-hover);
-            box-shadow: 0 30px 60px rgba(0,0,0,0.3);
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.3);
         }
 
         .rec-item img {
@@ -1097,7 +1133,7 @@
         .rec-btn {
             background: transparent;
             color: white;
-            border: 1px solid rgba(255,255,255,0.2);
+            border: 1px solid rgba(255, 255, 255, 0.2);
             padding: 14px 35px;
             font-weight: 700;
             cursor: pointer;
@@ -1131,14 +1167,14 @@
             color: black;
             border-color: white;
             transform: translateY(-2px);
-            box-shadow: 0 10px 30px rgba(255,255,255,0.2);
+            box-shadow: 0 10px 30px rgba(255, 255, 255, 0.2);
         }
 
         /* Comparison Section */
         .compare-section {
             padding: 150px 5%;
             background: var(--bg-darker);
-            border-top: 1px solid rgba(255,255,255,0.05);
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
         }
 
         .compare-header {
@@ -1173,7 +1209,7 @@
         }
 
         .compare-card.featured {
-            background: linear-gradient(145deg, rgba(45, 90, 245, 0.1), rgba(0,0,0,0));
+            background: linear-gradient(145deg, rgba(45, 90, 245, 0.1), rgba(0, 0, 0, 0));
             border-color: rgba(45, 90, 245, 0.3);
             transform: scale(1.05);
         }
@@ -1233,8 +1269,8 @@
 
         .compare-features li {
             padding: 12px 0;
-            border-bottom: 1px solid rgba(255,255,255,0.05);
-            color: rgba(255,255,255,0.8);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            color: rgba(255, 255, 255, 0.8);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -1256,7 +1292,7 @@
         /* Testimonials */
         .testimonials-section {
             padding: 150px 5%;
-            border-top: 1px solid rgba(255,255,255,0.05);
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
             position: relative;
             overflow: hidden;
         }
@@ -1293,7 +1329,7 @@
             font-size: 1.5rem;
             line-height: 1.8;
             margin-bottom: 40px;
-            color: rgba(255,255,255,0.9);
+            color: rgba(255, 255, 255, 0.9);
             font-style: italic;
             position: relative;
         }
@@ -1356,8 +1392,8 @@
         /* Newsletter */
         .newsletter-section {
             padding: 150px 5%;
-            background: linear-gradient(135deg, rgba(45,90,245,0.1), rgba(123,44,191,0.1));
-            border-top: 1px solid rgba(255,255,255,0.05);
+            background: linear-gradient(135deg, rgba(45, 90, 245, 0.1), rgba(123, 44, 191, 0.1));
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
             position: relative;
             overflow: hidden;
         }
@@ -1394,8 +1430,8 @@
         .newsletter-input {
             flex: 1;
             padding: 20px 30px;
-            background: rgba(255,255,255,0.05);
-            border: 1px solid rgba(255,255,255,0.1);
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
             border-radius: 100px;
             color: white;
             font-size: 1rem;
@@ -1406,12 +1442,12 @@
 
         .newsletter-input:focus {
             border-color: var(--primary);
-            background: rgba(255,255,255,0.08);
-            box-shadow: 0 0 30px rgba(45,90,245,0.2);
+            background: rgba(255, 255, 255, 0.08);
+            box-shadow: 0 0 30px rgba(45, 90, 245, 0.2);
         }
 
         .newsletter-input::placeholder {
-            color: rgba(255,255,255,0.4);
+            color: rgba(255, 255, 255, 0.4);
         }
 
         .newsletter-btn {
@@ -1431,7 +1467,7 @@
 
         .newsletter-btn:hover {
             transform: scale(1.05);
-            box-shadow: 0 20px 40px rgba(255,255,255,0.3);
+            box-shadow: 0 20px 40px rgba(255, 255, 255, 0.3);
         }
 
         /* MODAL - Enhanced */
@@ -1472,7 +1508,7 @@
             transition: 0.5s cubic-bezier(0.16, 1, 0.3, 1);
             max-height: 90vh;
             overflow-y: auto;
-            box-shadow: 0 50px 100px rgba(0,0,0,0.5);
+            box-shadow: 0 50px 100px rgba(0, 0, 0, 0.5);
         }
 
         .modal-overlay.active .modal-content {
@@ -1508,7 +1544,7 @@
             font-size: 1.5rem;
             font-weight: 800;
             color: white;
-            box-shadow: 0 10px 30px rgba(45,90,245,0.4);
+            box-shadow: 0 10px 30px rgba(45, 90, 245, 0.4);
         }
 
         .modal-info {
@@ -1613,7 +1649,7 @@
             background: rgba(255, 255, 255, 0.1);
             color: white;
             transform: rotate(90deg) scale(1.1);
-            border-color: rgba(255,255,255,0.3);
+            border-color: rgba(255, 255, 255, 0.3);
         }
 
         .modal-cta {
@@ -1653,7 +1689,7 @@
         footer {
             padding: 100px 5% 50px;
             background: var(--bg-darker);
-            border-top: 1px solid rgba(255,255,255,0.05);
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
             position: relative;
         }
 
@@ -1689,8 +1725,8 @@
         .social-link {
             width: 45px;
             height: 45px;
-            background: rgba(255,255,255,0.05);
-            border: 1px solid rgba(255,255,255,0.1);
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
             border-radius: 12px;
             display: flex;
             align-items: center;
@@ -1705,7 +1741,7 @@
             background: var(--primary);
             border-color: var(--primary);
             transform: translateY(-5px);
-            box-shadow: 0 10px 30px rgba(45,90,245,0.3);
+            box-shadow: 0 10px 30px rgba(45, 90, 245, 0.3);
         }
 
         .footer-links h4 {
@@ -1740,7 +1776,7 @@
         .footer-bottom {
             text-align: center;
             padding-top: 50px;
-            border-top: 1px solid rgba(255,255,255,0.05);
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
         }
 
         .footer-text {
@@ -1765,8 +1801,8 @@
             position: fixed;
             bottom: 40px;
             right: 40px;
-            background: rgba(0,0,0,0.9);
-            border: 1px solid rgba(255,255,255,0.1);
+            background: rgba(0, 0, 0, 0.9);
+            border: 1px solid rgba(255, 255, 255, 0.1);
             padding: 20px 30px;
             border-radius: 15px;
             color: white;
@@ -1789,7 +1825,7 @@
         .toast-icon {
             width: 40px;
             height: 40px;
-            background: rgba(0,255,136,0.2);
+            background: rgba(0, 255, 136, 0.2);
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -1803,22 +1839,22 @@
                 grid-template-columns: 1fr;
                 max-width: 600px;
             }
-            
+
             .rank-1 {
                 transform: scale(1);
                 order: -1;
             }
-            
+
             .compare-grid {
                 grid-template-columns: 1fr;
                 max-width: 500px;
             }
-            
+
             .compare-card.featured {
                 transform: scale(1);
                 order: -1;
             }
-            
+
             .compare-card.featured:hover {
                 transform: scale(1.05) translateY(-10px);
             }
@@ -1830,83 +1866,83 @@
                 text-align: center;
                 padding: 100px 5%;
             }
-            
+
             .section-reverse {
                 flex-direction: column;
             }
-            
+
             .section-content {
                 max-width: 100%;
             }
-            
+
             .section-features {
                 align-items: center;
             }
-            
+
             .feature-item {
                 justify-content: center;
             }
-            
+
             .image-wrapper {
                 width: 100%;
                 margin: 50px 0 0 0 !important;
                 height: 400px;
             }
-            
+
             .modal-content {
                 flex-direction: column;
                 padding: 40px 30px;
                 max-height: 95vh;
                 gap: 40px;
             }
-            
+
             .modal-visual {
                 position: relative;
                 width: 100%;
             }
-            
+
             .modal-info h2 {
                 font-size: 2rem;
             }
-            
+
             .spec-row {
                 flex-direction: column;
                 align-items: flex-start;
                 gap: 10px;
             }
-            
+
             .spec-value {
                 max-width: 100%;
                 text-align: left;
             }
-            
+
             .footer-content {
                 grid-template-columns: 1fr;
                 text-align: center;
                 gap: 40px;
             }
-            
+
             .footer-brand {
                 max-width: 100%;
             }
-            
+
             .footer-social {
                 justify-content: center;
             }
-            
+
             .nav-links {
                 display: none;
             }
-            
+
             .newsletter-form {
                 flex-direction: column;
             }
-            
+
             .hero-stats {
                 flex-direction: column;
                 gap: 30px;
             }
-            
+
             .brand-btn {
                 font-size: 1.8rem;
             }
@@ -1957,11 +1993,25 @@
             transform: scale(1);
         }
 
-        .stagger-1 { transition-delay: 0.1s; }
-        .stagger-2 { transition-delay: 0.2s; }
-        .stagger-3 { transition-delay: 0.3s; }
-        .stagger-4 { transition-delay: 0.4s; }
-        .stagger-5 { transition-delay: 0.5s; }
+        .stagger-1 {
+            transition-delay: 0.1s;
+        }
+
+        .stagger-2 {
+            transition-delay: 0.2s;
+        }
+
+        .stagger-3 {
+            transition-delay: 0.3s;
+        }
+
+        .stagger-4 {
+            transition-delay: 0.4s;
+        }
+
+        .stagger-5 {
+            transition-delay: 0.5s;
+        }
 
         /* Particle Canvas */
         #particles-canvas {
@@ -2026,11 +2076,11 @@
     <!-- Hero Section -->
     <section class="hero-section" id="hero">
         <div class="hero-bg-text">PRECISION</div>
-        
+
         <span class="hall-subtitle reveal">The Hall of Fame</span>
         <h1 class="champ-title reveal stagger-1">LEGENDS OF<br>PERFORMANCE</h1>
         <p class="champ-subtitle reveal stagger-2">
-            Discover the most powerful machines owned by the elite members of Class 11. 
+            Discover the most powerful machines owned by the elite members of Class 11.
             Where technology meets excellence.
         </p>
 
@@ -2039,7 +2089,7 @@
                 <div class="card-glow"></div>
                 <span class="rank-tag">#2 Runner Up</span>
                 <div class="card-visual">
-                    <img src="https://dlcdnwebimgs.asus.com/gain/9C7C838A-B474-4C2E-8E82-78007E7818E0/w240" alt="ROG">
+                    <img src="https://i.pinimg.com/1200x/8e/97/96/8e979688bb06e3061ab13586c268af12.jpg" alt="ROG">
                 </div>
                 <div class="card-info">
                     <h3>ROG Strix G16</h3>
@@ -2056,13 +2106,14 @@
                 <div class="card-glow"></div>
                 <span class="rank-tag bg-gold">King Tier</span>
                 <div class="card-visual">
-                    <img src="https://www.apple.com/v/macbook-pro-14-and-16/af/images/overview/hero/hero_main__cl6bh9mpx66u_large.jpg" alt="MacBook">
+                    <img src="https://i.pinimg.com/1200x/3d/ab/bc/3dabbcc30c1df51bc5d5fc7f39db660a.jpg" alt="MacBook">
                 </div>
                 <div class="card-info">
                     <h3 style="color: var(--accent-gold);">MacBook Pro M3 Max</h3>
                     <span class="owner">Sultan • Angkatan 11</span>
                     <div class="specs">
-                        <span class="tag" style="background: rgba(255,183,3,0.2); color: var(--accent-gold);">128GB Unified</span>
+                        <span class="tag" style="background: rgba(255,183,3,0.2); color: var(--accent-gold);">128GB
+                            Unified</span>
                         <span class="tag">Liquid Retina XDR</span>
                         <span class="tag">M3 Max Chip</span>
                     </div>
@@ -2073,7 +2124,8 @@
                 <div class="card-glow"></div>
                 <span class="rank-tag">#3 Elite Tier</span>
                 <div class="card-visual">
-                    <img src="https://p1-ofp.static.pub/medias/bWFrd2Rwcm9kdWN0czo6cHJvZHVjdF9pbWFnZXMvaW1nXzkzOThfMTY2MTIzOTY4NjMwNV8xNjYxMjM5Njk0Mzc2/lenovo-laptop-yoga-slim-7i-carbon-gen-7-13-intel-subseries-gallery-1.png" alt="Legion">
+                    <img src="https://i.pinimg.com/1200x/11/b3/59/11b359d3d91eda7a0267db08c9c97dfb.jpg"
+                        alt="Legion">
                 </div>
                 <div class="card-info">
                     <h3>Legion Pro 7i</h3>
@@ -2119,7 +2171,7 @@
             <div class="section-label">Angkatan 11</div>
             <h2 class="section-title">The<br>Masters</h2>
             <p class="section-desc">
-                Kekuatan tanpa batas. Tempat berkumpulnya para pemegang rekor performa tertinggi. 
+                Kekuatan tanpa batas. Tempat berkumpulnya para pemegang rekor performa tertinggi.
                 Generasi puncak dengan spesifikasi kelas dunia.
             </p>
             <div class="section-features">
@@ -2141,7 +2193,8 @@
             </a>
         </div>
         <div class="image-wrapper reveal-right stagger-2">
-            <img src="https://dlcdnwebimgs.asus.com/gain/A13C4729-A76F-4B8D-8822-87007E7818E0/w717/h525" class="parallax-img" alt="Angkatan 11">
+            <img src="https://i.pinimg.com/1200x/d6/a8/70/d6a870cdcb9c081fac4d426ddf64c827.jpg"
+                class="parallax-img" alt="Angkatan 11">
             <div class="image-badge">
                 <div class="badge-label">Performance Score</div>
                 <div class="badge-value">98.5/100</div>
@@ -2156,7 +2209,7 @@
             <div class="section-label">Angkatan 10</div>
             <h2 class="section-title">Smart<br>Balance</h2>
             <p class="section-desc">
-                Kecerdasan buatan dalam genggaman. Efisiensi bertemu dengan estetika modern. 
+                Kecerdasan buatan dalam genggaman. Efisiensi bertemu dengan estetika modern.
                 Performa optimal untuk produktivitas harian.
             </p>
             <div class="section-features">
@@ -2178,7 +2231,8 @@
             </a>
         </div>
         <div class="image-wrapper reveal-left stagger-2">
-            <img src="https://dlcdnwebimgs.asus.com/gain/3D7A6D8C-B8B1-4A2D-A1A4-0E3B8D992984/w717/h525" class="parallax-img" alt="Angkatan 10">
+            <img src="https://i.pinimg.com/1200x/88/1c/51/881c51cff52b0e473f7911934c554ba9.jpg"
+                class="parallax-img" alt="Angkatan 10">
             <div class="image-badge">
                 <div class="badge-label">Efficiency Rating</div>
                 <div class="badge-value">A+ Grade</div>
@@ -2193,7 +2247,7 @@
             <div class="section-label">Angkatan 09</div>
             <h2 class="section-title">Dynamic<br>Spirit</h2>
             <p class="section-desc">
-                Energi muda yang tak terbendung. Mobilitas tinggi untuk jiwa-jiwa kreatif. 
+                Energi muda yang tak terbendung. Mobilitas tinggi untuk jiwa-jiwa kreatif.
                 Desain stylish dengan performa handal.
             </p>
             <div class="section-features">
@@ -2215,7 +2269,8 @@
             </a>
         </div>
         <div class="image-wrapper reveal-right stagger-2">
-            <img src="https://dlcdnwebimgs.asus.com/gain/656112C1-3049-4366-938C-8F7E8D88B970/w717/h525" class="parallax-img" alt="Angkatan 09">
+            <img src="https://i.pinimg.com/736x/65/2a/22/652a22e8c0d14ba855a065a01aa578b9.jpg"
+                class="parallax-img" alt="Angkatan 09">
             <div class="image-badge">
                 <div class="badge-label">Popularity Index</div>
                 <div class="badge-value">#1 Choice</div>
@@ -2227,8 +2282,8 @@
     <section class="rec-section" id="ecosystem">
         <div class="rec-header reveal">
             <h2>Ecosystem Discovery</h2>
-            <p>Pilih brand favoritmu untuk melihat jajaran mahakarya teknologi mereka. 
-               Setiap brand memiliki karakteristik unik yang disesuaikan dengan kebutuhanmu.</p>
+            <p>Pilih brand favoritmu untuk melihat jajaran mahakarya teknologi mereka.
+                Setiap brand memiliki karakteristik unik yang disesuaikan dengan kebutuhanmu.</p>
         </div>
 
         <div class="brand-marquee-container reveal stagger-1">
@@ -2265,7 +2320,7 @@
             <h2>Choose Your Tier</h2>
             <p>Temukan paket yang sesuai dengan kebutuhan performa dan budget Anda</p>
         </div>
-        
+
         <div class="compare-grid">
             <div class="compare-card reveal-scale stagger-1">
                 <div class="compare-icon"><i class="fas fa-rocket"></i></div>
@@ -2280,7 +2335,7 @@
                 </ul>
                 <button class="rec-btn hover-trigger" onclick="showToast('Starter tier selected!')">Select Plan</button>
             </div>
-            
+
             <div class="compare-card featured reveal-scale stagger-2">
                 <div class="compare-icon"><i class="fas fa-crown"></i></div>
                 <h3 class="compare-title">Professional</h3>
@@ -2292,9 +2347,10 @@
                     <li><i class="fas fa-check"></i> Dedicated GPU</li>
                     <li><i class="fas fa-check"></i> 2 Year Premium Support</li>
                 </ul>
-                <button class="rec-btn hover-trigger" onclick="showToast('Professional tier selected!')">Select Plan</button>
+                <button class="rec-btn hover-trigger" onclick="showToast('Professional tier selected!')">Select
+                    Plan</button>
             </div>
-            
+
             <div class="compare-card reveal-scale stagger-3">
                 <div class="compare-icon"><i class="fas fa-gem"></i></div>
                 <h3 class="compare-title">Enterprise</h3>
@@ -2306,7 +2362,8 @@
                     <li><i class="fas fa-check"></i> RTX 4090 / Pro GPU</li>
                     <li><i class="fas fa-check"></i> Lifetime VIP Support</li>
                 </ul>
-                <button class="rec-btn hover-trigger" onclick="showToast('Enterprise tier selected!')">Select Plan</button>
+                <button class="rec-btn hover-trigger" onclick="showToast('Enterprise tier selected!')">Select
+                    Plan</button>
             </div>
         </div>
     </section>
@@ -2317,12 +2374,12 @@
             <h2>Community Voices</h2>
             <p>Apa kata para member tentang pengalaman mereka</p>
         </div>
-        
+
         <div class="testimonials-slider reveal stagger-2">
             <div class="testimonial-card">
                 <p class="testimonial-quote">
-                    Class 11 bukan sekadar komunitas, tapi tempat dimana passion tentang teknologi 
-                    bertemu dengan persahabatan sejati. Laptop saya adalah investasi terbaik yang 
+                    Class 11 bukan sekadar komunitas, tapi tempat dimana passion tentang teknologi
+                    bertemu dengan persahabatan sejati. Laptop saya adalah investasi terbaik yang
                     pernah saya buat untuk produktivitas.
                 </p>
                 <div class="testimonial-author">
@@ -2340,8 +2397,8 @@
     <section class="newsletter-section" id="contact">
         <div class="newsletter-content reveal">
             <h2>Stay Updated</h2>
-            <p>Dapatkan informasi terbaru tentang rilis laptop, review mendalam, 
-               dan event eksklusif Class 11 langsung di inbox Anda.</p>
+            <p>Dapatkan informasi terbaru tentang rilis laptop, review mendalam,
+                dan event eksklusif Class 11 langsung di inbox Anda.</p>
             <form class="newsletter-form" onsubmit="event.preventDefault(); showToast('Successfully subscribed!');">
                 <input type="email" class="newsletter-input" placeholder="Enter your email address" required>
                 <button type="submit" class="newsletter-btn hover-trigger">Subscribe</button>
@@ -2389,7 +2446,8 @@
                 </div>
 
                 <div class="modal-cta">
-                    <button class="rec-btn primary hover-trigger" onclick="showToast('Request sent! We will contact you soon.')">
+                    <button class="rec-btn primary hover-trigger"
+                        onclick="showToast('Request sent! We will contact you soon.')">
                         <i class="fas fa-shopping-cart" style="margin-right: 8px;"></i> Pre-Order Now
                     </button>
                     <button class="rec-btn secondary hover-trigger" onclick="closeModal()">Close Details</button>
@@ -2406,8 +2464,8 @@
                     <div class="logo-icon"><i class="fas fa-microchip"></i></div>
                     CLASS<span>11</span>
                 </div>
-                <p>Komunitas teknologi terdepan yang menghubungkan passion, inovasi, 
-                   dan persahabatan dalam dunia komputasi modern.</p>
+                <p>Komunitas teknologi terdepan yang menghubungkan passion, inovasi,
+                    dan persahabatan dalam dunia komputasi modern.</p>
                 <div class="footer-social">
                     <a href="#" class="social-link hover-trigger"><i class="fab fa-instagram"></i></a>
                     <a href="#" class="social-link hover-trigger"><i class="fab fa-twitter"></i></a>
@@ -2415,7 +2473,7 @@
                     <a href="#" class="social-link hover-trigger"><i class="fab fa-youtube"></i></a>
                 </div>
             </div>
-            
+
             <div class="footer-links reveal stagger-1">
                 <h4>Navigation</h4>
                 <ul>
@@ -2425,7 +2483,7 @@
                     <li><a href="#compare" class="hover-trigger">Compare</a></li>
                 </ul>
             </div>
-            
+
             <div class="footer-links reveal stagger-2">
                 <h4>Resources</h4>
                 <ul>
@@ -2435,7 +2493,7 @@
                     <li><a href="#" class="hover-trigger">Blog</a></li>
                 </ul>
             </div>
-            
+
             <div class="footer-links reveal stagger-3">
                 <h4>Legal</h4>
                 <ul>
@@ -2446,7 +2504,7 @@
                 </ul>
             </div>
         </div>
-        
+
         <div class="footer-bottom">
             <div class="footer-text">PRECISION</div>
             <div class="copyright">&copy; 2026 AI PRECISION PORTAL • DESIGNED FOR CHAMPIONS</div>
@@ -2470,7 +2528,7 @@
             const loader = document.getElementById('loader');
             const progress = document.getElementById('loader-progress');
             let width = 0;
-            
+
             const interval = setInterval(() => {
                 width += Math.random() * 15;
                 if (width >= 100) {
@@ -2489,7 +2547,7 @@
         function initAnimations() {
             // Scroll Reveal Animation
             const revealElements = document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale');
-            
+
             const revealObserver = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
@@ -2524,7 +2582,7 @@
         // Cursor
         const dot = document.querySelector('.cursor-dot');
         const out = document.querySelector('.cursor-outline');
-        
+
         window.addEventListener('mousemove', (e) => {
             gsap.to(dot, { x: e.clientX, y: e.clientY, duration: 0.1 });
             gsap.to(out, { x: e.clientX, y: e.clientY, duration: 0.4 });
@@ -2558,7 +2616,7 @@
             const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
             const scrolled = (winScroll / height) * 100;
             document.getElementById('progress-bar').style.width = scrolled + '%';
-            
+
             // Navbar background
             const navbar = document.getElementById('navbar');
             if (winScroll > 100) {
@@ -2574,7 +2632,7 @@
                 const rect = img.getBoundingClientRect();
                 const x = (e.clientX - rect.left) / rect.width - 0.5;
                 const y = (e.clientY - rect.top) / rect.height - 0.5;
-                
+
                 gsap.to(img, {
                     x: x * 20,
                     y: y * 20,
@@ -2582,7 +2640,7 @@
                     ease: 'power2.out'
                 });
             });
-            
+
             img.addEventListener('mouseleave', () => {
                 gsap.to(img, {
                     x: 0,
@@ -2847,4 +2905,5 @@
         window.onload = () => renderBrand('asus');
     </script>
 </body>
+
 </html>
